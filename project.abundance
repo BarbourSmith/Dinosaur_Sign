@@ -29,9 +29,27 @@
       "repoOwner": "BarbourSmith",
       "repoName": "Dinosaur_Sign",
       "SVGwidth": 10
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.704954954954955,
+      "y": 0.4874651810584958,
+      "uniqueID": "id-16",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-16",
+      "ap2ID": "id-2"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
