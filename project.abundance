@@ -7,6 +7,30 @@
   "topLevel": true,
   "allAtoms": [
     {
+      "atomType": "Import",
+      "x": 0.27702702702702703,
+      "y": 0.479108635097493,
+      "uniqueID": "id-13",
+      "fileName": "dinosaur-inn-cutline.svg",
+      "name": "Import",
+      "type": "SVG",
+      "repoOwner": "BarbourSmith",
+      "repoName": "Dinosaur_Sign",
+      "SVGwidth": 10
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.704954954954955,
+      "y": 0.4874651810584958,
+      "uniqueID": "id-16",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
@@ -20,15 +44,15 @@
     },
     {
       "atomType": "Import",
-      "x": 0.27702702702702703,
-      "y": 0.479108635097493,
+      "x": 0.27910052910052907,
+      "y": 0.4651810584958217,
       "uniqueID": "id-13",
       "fileName": "dinosaur-inn-cutline.svg",
       "name": "Import",
       "type": "SVG",
       "repoOwner": "BarbourSmith",
       "repoName": "Dinosaur_Sign",
-      "SVGwidth": 10
+      "SVGwidth": 2000
     },
     {
       "atomType": "Circle",
