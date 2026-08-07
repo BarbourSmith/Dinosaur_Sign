@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "Dinosaur_Sign",
+  "ioValues": [
+    {
+      "name": "Wood_Thickness",
+      "ioValue": 12,
+      "currentEquation": "12"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -798,6 +805,12 @@
       "y": 0.24233983286908078,
       "uniqueID": "id-180",
       "name": "Make Sign",
+      "ioValues": [
+        {
+          "name": "Wood_Thickness",
+          "ioValue": 12
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -818,6 +831,12 @@
           "y": 0.2785515320334262,
           "uniqueID": "id-184",
           "name": "Dino Shape",
+          "ioValues": [
+            {
+              "name": "Wood_Thickness",
+              "ioValue": 12
+            }
+          ],
           "topLevel": false,
           "allAtoms": [
             {
@@ -872,7 +891,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 18
+                  "ioValue": 12
                 }
               ]
             },
@@ -1062,8 +1081,8 @@
             },
             {
               "atomType": "Import",
-              "x": 0.2744708994708995,
-              "y": 0.3899721448467966,
+              "x": 0.2208994708994709,
+              "y": 0.5181058495821727,
               "uniqueID": "id-234",
               "fileName": "dinosaur-inn-cutline.svg",
               "name": "Import",
@@ -1071,6 +1090,14 @@
               "repoOwner": "BarbourSmith",
               "repoName": "Dinosaur_Sign",
               "SVGwidth": 2200
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.22005571030640667,
+              "uniqueID": "id-333",
+              "name": "Wood_Thickness",
+              "type": "number"
             }
           ],
           "allConnectors": [
@@ -1108,14 +1135,19 @@
               "ap2Name": "geometry",
               "ap1ID": "id-234",
               "ap2ID": "id-191"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-333",
+              "ap2ID": "id-191"
             }
           ],
           "fileTypeVersion": 1
         },
         {
           "atomType": "Rectangle",
-          "x": 0.08597883597883599,
-          "y": 0.83008356545961,
+          "x": 0.11904761904761904,
+          "y": 0.43732590529247906,
           "uniqueID": "id-285",
           "ioValues": [
             {
@@ -1131,8 +1163,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.19444444444444442,
-          "y": 0.7883008356545962,
+          "x": 0.19775132275132273,
+          "y": 0.37325905292479106,
           "uniqueID": "id-289",
           "ioValues": [
             {
@@ -1148,8 +1180,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.24933862433862436,
-          "y": 0.8356545961002785,
+          "x": 0.24603174603174605,
+          "y": 0.4902506963788301,
           "uniqueID": "id-293",
           "ioValues": [
             {
@@ -1219,6 +1251,94 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.45171957671957674,
+          "y": 0.8161559888579387,
+          "uniqueID": "id-316",
+          "name": "Rear Brace",
+          "ioValues": [
+            {
+              "name": "Wood_Thickness",
+              "ioValue": 12
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-318",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.3101851851851852,
+              "y": 0.5877437325905293,
+              "uniqueID": "id-320",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 150,
+                  "currentEquation": "150"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 600,
+                  "currentEquation": "600"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-336",
+              "name": "Wood_Thickness",
+              "type": "number"
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.4695767195767196,
+              "y": 0.7242339832869081,
+              "uniqueID": "id-416",
+              "name": "Github Molecule",
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-418",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                }
+              ],
+              "allConnectors": [],
+              "fileTypeVersion": 1
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.7520891364902507,
+          "uniqueID": "id-330",
+          "name": "Wood_Thickness",
+          "type": "number"
         }
       ],
       "allConnectors": [
@@ -1266,6 +1386,16 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-307",
           "ap2ID": "id-182"
+        },
+        {
+          "ap2Name": "Wood_Thickness",
+          "ap1ID": "id-330",
+          "ap2ID": "id-184"
+        },
+        {
+          "ap2Name": "Wood_Thickness",
+          "ap1ID": "id-330",
+          "ap2ID": "id-316"
         }
       ],
       "fileTypeVersion": 1
@@ -1291,6 +1421,13 @@
         }
       ],
       "orientationsForHashed": "38ce02ae"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.6100278551532033,
+      "uniqueID": "id-327",
+      "name": "Wood_Thickness"
     }
   ],
   "allConnectors": [
@@ -1338,6 +1475,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-180",
       "ap2ID": "id-55"
+    },
+    {
+      "ap2Name": "Wood_Thickness",
+      "ap1ID": "id-327",
+      "ap2ID": "id-180"
     }
   ],
   "unitsKey": "MM",
