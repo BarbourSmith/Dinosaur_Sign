@@ -32,14 +32,13 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.8141534391534391,
-      "y": 0.34261838440111425,
+      "x": 0.8201058201058202,
+      "y": 0.3342618384401114,
       "uniqueID": "id-26",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 300,
-          "currentEquation": "300"
+          "ioValue": 300
         },
         {
           "name": "y length",
@@ -59,8 +58,62 @@
         },
         {
           "name": "height",
-          "ioValue": -10,
-          "currentEquation": "-10"
+          "ioValue": -10
+        }
+      ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.23346560846560846,
+      "y": 0.34261838440111425,
+      "uniqueID": "id-42",
+      "fileName": "dinosaur-inn-cutline.svg",
+      "name": "Import",
+      "type": "SVG",
+      "repoOwner": "BarbourSmith",
+      "repoName": "Dinosaur_Sign",
+      "SVGwidth": 2000
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3664021164021164,
+      "y": 0.2618384401114206,
+      "uniqueID": "id-44",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 18,
+          "currentEquation": "18"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.4563492063492064,
+      "y": 0.44568245125348194,
+      "uniqueID": "id-48",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 180,
+          "currentEquation": "180"
         }
       ]
     }
@@ -75,6 +128,16 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-26",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-42",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-44",
+      "ap2ID": "id-48"
     }
   ],
   "unitsKey": "MM",
