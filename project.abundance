@@ -7,30 +7,6 @@
   "topLevel": true,
   "allAtoms": [
     {
-      "atomType": "Import",
-      "x": 0.27702702702702703,
-      "y": 0.479108635097493,
-      "uniqueID": "id-13",
-      "fileName": "dinosaur-inn-cutline.svg",
-      "name": "Import",
-      "type": "SVG",
-      "repoOwner": "BarbourSmith",
-      "repoName": "Dinosaur_Sign",
-      "SVGwidth": 10
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.704954954954955,
-      "y": 0.4874651810584958,
-      "uniqueID": "id-16",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
@@ -43,21 +19,9 @@
       ]
     },
     {
-      "atomType": "Import",
-      "x": 0.27910052910052907,
-      "y": 0.4651810584958217,
-      "uniqueID": "id-13",
-      "fileName": "dinosaur-inn-cutline.svg",
-      "name": "Import",
-      "type": "SVG",
-      "repoOwner": "BarbourSmith",
-      "repoName": "Dinosaur_Sign",
-      "SVGwidth": 2000
-    },
-    {
       "atomType": "Circle",
-      "x": 0.704954954954955,
-      "y": 0.4874651810584958,
+      "x": 0.46494708994708994,
+      "y": 0.7883008356545962,
       "uniqueID": "id-16",
       "ioValues": [
         {
@@ -65,12 +29,51 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.8141534391534391,
+      "y": 0.34261838440111425,
+      "uniqueID": "id-26",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 300,
+          "currentEquation": "300"
+        },
+        {
+          "name": "y length",
+          "ioValue": 2438.3999999999996
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5218253968253969,
+      "y": 0.9387186629526462,
+      "uniqueID": "id-30",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": -10,
+          "currentEquation": "-10"
+        }
+      ]
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-16",
+      "ap2ID": "id-30"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-26",
       "ap2ID": "id-2"
     }
   ],
