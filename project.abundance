@@ -31,22 +31,6 @@
       ]
     },
     {
-      "atomType": "Rectangle",
-      "x": 0.8201058201058202,
-      "y": 0.3342618384401114,
-      "uniqueID": "id-26",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 300
-        },
-        {
-          "name": "y length",
-          "ioValue": 2438.3999999999996
-        }
-      ]
-    },
-    {
       "atomType": "Extrude",
       "x": 0.5231481481481481,
       "y": 0.7883008356545962,
@@ -862,6 +846,30 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.25,
+      "y": 0.6434540389972144,
+      "uniqueID": "id-180",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-182",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
