@@ -8057,11 +8057,19 @@
                   "ioValue": null
                 },
                 {
-                  "name": "Shape 6",
+                  "name": "Shape 7",
                   "ioValue": null
                 },
                 {
-                  "name": "Shape 7",
+                  "name": "Shape 8",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 9",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 10",
                   "ioValue": null
                 }
               ]
@@ -8092,8 +8100,8 @@
             },
             {
               "atomType": "Rotate",
-              "x": 0.2757936507936508,
-              "y": 0.48467966573816157,
+              "x": 0.2281746031746032,
+              "y": 0.4902506963788301,
               "uniqueID": "id-891",
               "ioValues": [
                 {
@@ -8118,8 +8126,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4338624338624339,
-              "y": 0.46239554317548753,
+              "x": 0.4351851851851851,
+              "y": 0.4596100278551532,
               "uniqueID": "id-892",
               "ioValues": [
                 {
@@ -8190,8 +8198,8 @@
             },
             {
               "atomType": "GitHubMolecule",
-              "x": 0.7896825396825398,
-              "y": 0.5487465181058496,
+              "x": 0.7493386243386244,
+              "y": 0.6406685236768802,
               "uniqueID": "id-1388",
               "name": "Linear-Pattern",
               "ioValues": [
@@ -14393,8 +14401,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5718253968253969,
-              "y": 0.8692200557103064,
+              "x": 0.5720899470899471,
+              "y": 0.8774373259052926,
               "uniqueID": "id-4089",
               "ioValues": [
                 {
@@ -14403,11 +14411,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -6
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 100
+                  "ioValue": 135
                 },
                 {
                   "name": "zDist",
@@ -14417,8 +14426,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.7206349206349206,
-              "y": 0.8469359331476323,
+              "x": 0.7698412698412698,
+              "y": 0.9080779944289693,
               "uniqueID": "id-4090",
               "ioValues": [
                 {
@@ -14438,6 +14447,25 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "ExtractTag",
+              "x": 0.8756613756613756,
+              "y": 0.6462395543175488,
+              "uniqueID": "id-4111",
+              "name": "Extract Wood",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tagIndex": 0,
+              "selectedTags": [
+                "Wood"
+              ],
+              "includeUntagged": false,
+              "notKeepOut": false
             }
           ],
           "allConnectors": [
@@ -14462,6 +14490,11 @@
               "ap2ID": "id-841"
             },
             {
+              "ap2Name": "geometry",
+              "ap1ID": "id-876",
+              "ap2ID": "id-4111"
+            },
+            {
               "ap2Name": "Shape 2",
               "ap1ID": "id-877",
               "ap2ID": "id-876"
@@ -14482,7 +14515,7 @@
               "ap2ID": "id-893"
             },
             {
-              "ap2Name": "Shape 4",
+              "ap2Name": "Shape 10",
               "ap1ID": "id-892",
               "ap2ID": "id-876"
             },
@@ -14512,7 +14545,7 @@
               "ap2ID": "id-877"
             },
             {
-              "ap2Name": "Shape 6",
+              "ap2Name": "Shape 4",
               "ap1ID": "id-1167",
               "ap2ID": "id-876"
             },
@@ -14530,6 +14563,16 @@
               "ap2Name": "geometry",
               "ap1ID": "id-4089",
               "ap2ID": "id-4090"
+            },
+            {
+              "ap2Name": "Shape 8",
+              "ap1ID": "id-4089",
+              "ap2ID": "id-876"
+            },
+            {
+              "ap2Name": "Shape 9",
+              "ap1ID": "id-4090",
+              "ap2ID": "id-876"
             }
           ],
           "fileTypeVersion": 1
