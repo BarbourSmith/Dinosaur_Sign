@@ -679,7 +679,7 @@
               "downwardFaceIndex": 3
             },
             {
-              "downwardFaceIndex": 169
+              "downwardFaceIndex": 170
             },
             {
               "downwardFaceIndex": 0
@@ -802,8 +802,8 @@
         },
         {
           "atomType": "CutLayout",
-          "x": 0.5892857142857143,
-          "y": 0.31197771587743733,
+          "x": 0.6097883597883598,
+          "y": 0.3064066852367688,
           "uniqueID": "id-4324",
           "name": "Cut Layout",
           "ioValues": [
@@ -821,7 +821,8 @@
             },
             {
               "name": "Part Padding",
-              "ioValue": 10
+              "ioValue": 20,
+              "currentEquation": "20"
             },
             {
               "name": "Orientations",
@@ -832,50 +833,50 @@
             [
               {
                 "id": 0,
-                "rotate": 0,
+                "rotate": 90,
                 "translate": {
-                  "x": 1219,
-                  "y": 609.5
-                }
-              },
-              {
-                "id": 1,
-                "rotate": 0,
-                "translate": {
-                  "x": 1219,
-                  "y": 609.5
-                }
-              },
-              {
-                "id": 2,
-                "rotate": 0,
-                "translate": {
-                  "x": 1219,
-                  "y": 609.5
+                  "x": 1546.739990234375,
+                  "y": 7.670013427734375
                 }
               },
               {
                 "id": 3,
-                "rotate": 0,
+                "rotate": 270,
                 "translate": {
-                  "x": 1219,
-                  "y": 609.5
+                  "x": 387.4100036621094,
+                  "y": 2901.830078125
+                }
+              },
+              {
+                "id": 1,
+                "rotate": 270,
+                "translate": {
+                  "x": 16.799999237060547,
+                  "y": 2232.880126953125
+                }
+              },
+              {
+                "id": 2,
+                "rotate": 90,
+                "translate": {
+                  "x": 950.72998046875,
+                  "y": -1352.110107421875
                 }
               },
               {
                 "id": 4,
-                "rotate": 0,
+                "rotate": 90,
                 "translate": {
-                  "x": 1219,
-                  "y": 609.5
+                  "x": 1500,
+                  "y": -1990
                 }
               },
               {
                 "id": 5,
-                "rotate": 0,
+                "rotate": 90,
                 "translate": {
-                  "x": 1219,
-                  "y": 609.5
+                  "x": 1121.1199951171875,
+                  "y": -2334.7099609375
                 }
               }
             ]
