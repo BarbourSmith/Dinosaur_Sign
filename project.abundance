@@ -1429,6 +1429,41 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1786907958367
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.7076719576719577,
+          "y": 0.5069637883008357,
+          "uniqueID": "id-6155",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Dino Body",
+              "currentEquation": "Dino Body"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
@@ -1471,6 +1506,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-4319",
           "ap2ID": "id-4324"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4324",
+          "ap2ID": "id-6155"
         },
         {
           "ap2Name": "number or geometry",
