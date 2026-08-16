@@ -97,13 +97,13 @@
           "downwardFaceIndex": 3
         },
         {
-          "downwardFaceIndex": 9
+          "downwardFaceIndex": 89
         },
         {
           "downwardFaceIndex": 0
         }
       ],
-      "orientationsForHashed": "9cb0e124"
+      "orientationsForHashed": "c55a8608"
     },
     {
       "atomType": "Input",
@@ -7992,7 +7992,8 @@
                 },
                 {
                   "name": "y-axis degrees",
-                  "ioValue": 0
+                  "ioValue": 90,
+                  "currentEquation": "90"
                 },
                 {
                   "name": "z-axis degrees",
@@ -9046,8 +9047,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.35185185185185186,
-              "y": 0.5933147632311978,
+              "x": 0.35714285714285715,
+              "y": 0.5264623955431754,
               "uniqueID": "id-1167",
               "name": "Vertical",
               "ioValues": [
@@ -9200,7 +9201,8 @@
                     },
                     {
                       "name": "zDist",
-                      "ioValue": 200
+                      "ioValue": 210,
+                      "currentEquation": "210"
                     }
                   ]
                 },
@@ -9256,7 +9258,7 @@
                     {
                       "name": "Shape 5",
                       "ioValue": {
-                        "geometry": "move-extrude-rectangle-12-100-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-1200--6-50-200",
+                        "geometry": "move-extrude-rectangle-12-100-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-1200--6-50-210",
                         "dimension": "3D",
                         "plane": {
                           "origin": [
