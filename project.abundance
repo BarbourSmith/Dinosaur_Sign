@@ -37,10 +37,6 @@
         {
           "name": "Shape 2",
           "ioValue": null
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": null
         }
       ]
     },
@@ -69,91 +65,11 @@
       ]
     },
     {
-      "atomType": "CutOrient",
-      "x": 0.3849206349206349,
-      "y": 0.18662952646239553,
-      "uniqueID": "id-312",
-      "name": "Cut Orient",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "orientations": [
-        {
-          "downwardFaceIndex": 3
-        },
-        {
-          "downwardFaceIndex": 0
-        },
-        {
-          "downwardFaceIndex": 1
-        },
-        {
-          "downwardFaceIndex": 3
-        },
-        {
-          "downwardFaceIndex": 3
-        },
-        {
-          "downwardFaceIndex": 169
-        },
-        {
-          "downwardFaceIndex": 0
-        }
-      ],
-      "orientationsForHashed": "d35a36a8"
-    },
-    {
       "atomType": "Input",
       "x": 0.025384615384615384,
       "y": 0.15384615384615385,
       "uniqueID": "id-327",
       "name": "Wood_Thickness"
-    },
-    {
-      "atomType": "Move",
-      "x": 0.5568783068783069,
-      "y": 0.1894150417827298,
-      "uniqueID": "id-594",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 1000
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.25925925925925924,
-      "y": 0.17827298050139276,
-      "uniqueID": "id-1458",
-      "name": "Extract Wood",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tagIndex": 0,
-      "selectedTags": [
-        "Wood"
-      ],
-      "includeUntagged": false,
-      "notKeepOut": false
     },
     {
       "atomType": "GitHubMolecule",
@@ -1264,8 +1180,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.24206349206349206,
-          "y": 0.713091922005571,
+          "x": 0.24801587301587302,
+          "y": 0.7103064066852367,
           "uniqueID": "id-316",
           "name": "Rear Brace",
           "ioValues": [
@@ -1370,8 +1286,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.8895502645502646,
-              "y": 0.479108635097493,
+              "x": 0.8333333333333334,
+              "y": 0.6434540389972144,
               "uniqueID": "id-583",
               "ioValues": [
                 {
@@ -6906,25 +6822,6 @@
               "fileTypeVersion": 1
             },
             {
-              "atomType": "ExtractTag",
-              "x": 0.8763227513227514,
-              "y": 0.8440111420612814,
-              "uniqueID": "id-3440",
-              "name": "Extract Wood",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "tagIndex": 0,
-              "selectedTags": [
-                "Wood"
-              ],
-              "includeUntagged": false,
-              "notKeepOut": false
-            },
-            {
               "atomType": "Rotate",
               "x": 0.38822751322751325,
               "y": 0.8885793871866295,
@@ -7000,6 +6897,22 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.8928571428571428,
+              "y": 0.7910863509749304,
+              "uniqueID": "id-4294",
+              "name": "Brace",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Brace"
+              ]
             }
           ],
           "allConnectors": [
@@ -7044,14 +6957,9 @@
               "ap2ID": "id-1452"
             },
             {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-583",
-              "ap2ID": "id-318"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-583",
-              "ap2ID": "id-3440"
+              "ap2ID": "id-4294"
             },
             {
               "ap2Name": "Shape 2",
@@ -7132,14 +7040,19 @@
               "ap2Name": "Shape 6",
               "ap1ID": "id-4081",
               "ap2ID": "id-583"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4294",
+              "ap2ID": "id-318"
             }
           ],
           "fileTypeVersion": 1
         },
         {
           "atomType": "Molecule",
-          "x": 0.2208994708994709,
-          "y": 0.871866295264624,
+          "x": 0.22486772486772486,
+          "y": 0.8969359331476323,
           "uniqueID": "id-1439",
           "name": "Neck Brace",
           "ioValues": [
@@ -7943,6 +7856,22 @@
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.9014550264550264,
+              "y": 0.7381615598885795,
+              "uniqueID": "id-4297",
+              "name": "Brace",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Brace"
+              ]
             }
           ],
           "allConnectors": [
@@ -7952,9 +7881,9 @@
               "ap2ID": "id-1640"
             },
             {
-              "ap2Name": "number or geometry",
+              "ap2Name": "geometry",
               "ap1ID": "id-1822",
-              "ap2ID": "id-1441"
+              "ap2ID": "id-4297"
             },
             {
               "ap2Name": "geometry",
@@ -8000,14 +7929,19 @@
               "ap2Name": "Shape 2",
               "ap1ID": "id-1640",
               "ap2ID": "id-1822"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4297",
+              "ap2ID": "id-1441"
             }
           ],
           "fileTypeVersion": 1
         },
         {
           "atomType": "Molecule",
-          "x": 0.24933862433862436,
-          "y": 0.5348189415041783,
+          "x": 0.251984126984127,
+          "y": 0.5403899721448467,
           "uniqueID": "id-840",
           "name": "Front Brace",
           "ioValues": [
@@ -14445,25 +14379,6 @@
               ]
             },
             {
-              "atomType": "ExtractTag",
-              "x": 0.8756613756613756,
-              "y": 0.6462395543175488,
-              "uniqueID": "id-4111",
-              "name": "Extract Wood",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "tagIndex": 0,
-              "selectedTags": [
-                "Wood"
-              ],
-              "includeUntagged": false,
-              "notKeepOut": false
-            },
-            {
               "atomType": "Rotate",
               "x": 0.3108465608465608,
               "y": 0.9192200557103064,
@@ -14528,6 +14443,22 @@
                   "ioValue": null
                 }
               ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.8802910052910053,
+              "y": 0.6211699164345404,
+              "uniqueID": "id-4291",
+              "name": "Brace",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Brace"
+              ]
             }
           ],
           "allConnectors": [
@@ -14547,14 +14478,9 @@
               "ap2ID": "id-3443"
             },
             {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-876",
-              "ap2ID": "id-841"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-876",
-              "ap2ID": "id-4111"
+              "ap2ID": "id-4291"
             },
             {
               "ap2Name": "Shape 2",
@@ -14650,6 +14576,11 @@
               "ap2Name": "Shape 11",
               "ap1ID": "id-4137",
               "ap2ID": "id-876"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4291",
+              "ap2ID": "id-841"
             }
           ],
           "fileTypeVersion": 1
@@ -14756,10 +14687,16 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.5873015873015873,
-      "y": 0.871866295264624,
+      "x": 0.20701058201058203,
+      "y": 0.6824512534818942,
       "uniqueID": "id-4169",
       "name": "Generate Gcode",
+      "ioValues": [
+        {
+          "name": "input",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -14773,9 +14710,773 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-4173",
+          "name": "input",
+          "type": "geometry"
+        },
+        {
+          "atomType": "CutOrient",
+          "x": 0.2619047619047619,
+          "y": 0.23119777158774377,
+          "uniqueID": "id-4176",
+          "name": "Cut Orient",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "orientations": [
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 0
+            },
+            {
+              "downwardFaceIndex": 1
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 169
+            },
+            {
+              "downwardFaceIndex": 0
+            }
+          ],
+          "orientationsForHashed": "b1a5a623"
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.15343915343915343,
+          "y": 0.20334261838440112,
+          "uniqueID": "id-4177",
+          "name": "Extract Wood",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [
+            "Wood"
+          ],
+          "includeUntagged": false,
+          "notKeepOut": false
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.8677248677248678,
+          "y": 0.25348189415041783,
+          "uniqueID": "id-4193",
+          "name": "Plywood Sheet",
+          "ioValues": [
+            {
+              "name": "Thickness",
+              "ioValue": 18
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4187",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.12764550264550265,
+              "y": 0.3203342618384401,
+              "uniqueID": "id-4188",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 2438.3999999999996,
+                  "currentEquation": "96*25.4"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 1219.1999999999998,
+                  "currentEquation": "48*25.4"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.2757936507936508,
+              "y": 0.2924791086350975,
+              "uniqueID": "id-4189",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 18
+                }
+              ]
+            },
+            {
+              "atomType": "Color",
+              "x": 0.4027777777777778,
+              "y": 0.2256267409470752,
+              "uniqueID": "id-4190",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Tan"
+            },
+            {
+              "atomType": "Add-BOM-Tag",
+              "x": 0.6031746031746031,
+              "y": 0.5598885793871866,
+              "uniqueID": "id-4191",
+              "name": "Add BOM Tag",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Item Name",
+                  "ioValue": "New Item",
+                  "currentEquation": "New Item"
+                },
+                {
+                  "name": "Number Needed",
+                  "ioValue": 1
+                },
+                {
+                  "name": "Cost (USD)",
+                  "ioValue": 0
+                },
+                {
+                  "name": "Source Link",
+                  "ioValue": ""
+                }
+              ],
+              "BOMitem": {
+                "BOMitemName": "New Item",
+                "numberNeeded": 1,
+                "costUSD": 0,
+                "source": ""
+              }
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4192",
+              "name": "Thickness",
+              "type": "number"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4188",
+              "ap2ID": "id-4189"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4189",
+              "ap2ID": "id-4190"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4190",
+              "ap2ID": "id-4191"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4191",
+              "ap2ID": "id-4187"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-4192",
+              "ap2ID": "id-4189"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-16T18:23:39.056Z",
+            "privateRepo": false,
+            "repoName": "Plywood-Sheet",
+            "dateCreated": "2025-09-19T23:39:33Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Plywood-Sheet/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "869d0ab8-6594-4dc7-b527-feade96f3902",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Plywood-Sheet",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739513",
+            "ranking": 2.7,
+            "searchField": "plywood-sheet barboursmith  ",
+            "owner": "BarbourSmith",
+            "description": "",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Plywood-Sheet/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Plywood-Sheet/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1786907932517
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.2605820105820106,
+          "y": 0.7409470752089137,
+          "uniqueID": "id-4223",
+          "name": "IthFromAssembly",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "i",
+              "ioValue": 1,
+              "currentEquation": "1"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4219",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.5026041666666666,
+              "y": 0.6845238095238095,
+              "uniqueID": "id-4220",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "i",
+                  "ioValue": 1
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "\n      const Inputs = [\n       {inputName: \"geometry\", type: \"geometry\", defaultValue: null},\n      {inputName: \"i\", type: \"number\", defaultValue: 0},\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      //Gets the shape from the library - no need to clone or access geometry directly\n      let importedShape = library[geometry]\n      let j = 0;\n      console.log(\"foo\")\n      console.log(importedShape)\n      const leafList = await AssemblyAsIterable(importedShape)\n      console.log(leafList)\n      if (i >= leafList.length) {\n        throw new Error(`Assembly only has ${leafList.length} entries. Tried to find index: ${i}.`)\n      }\n      return leafList[i]\n\n\n      /**\n      Built-in Functions Available:\n      - Move(geometry, x, y, z) - Move a shape in 3D space\n      - Rotate(geometry, x, y, z) - Rotate a shape around X, Y, Z axes (degrees)\n      - Scale(geometry, factor) - Scale a shape by a factor\n      - Assembly([shapes]) - Combine multiple shapes into an assembly\n      - Intersect(shape1, shape2) - Boolean intersection of two shapes\n      - GetBounds(geometry) - Get the bounding box of a shape\n      - Fillet(geometry, radius) - Round edges with specified radius\n      - Chamfer(geometry, size) - Bevel edges with specified size\n\n      To Use the Code Atom, enter your inputs to the input list as an object array:\n      const Inputs = [\n        {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n        {inputName: \"dist\", type: \"number\", defaultValue: 5},\n        {inputName: \"height\", type: \"number\", defaultValue: 10}\n      ]\n\n      Access imported geometry using library[inputName] - the built-in functions handle \n      the complexity of accessing geometry arrays and maintaining metadata automatically.\n\n      Simple Example - Move a shape:\n         const Inputs = [\n          {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n          {inputName: \"x\", type: \"number\", defaultValue: 5}\n        ]\n        let movedShape = await Move(library[shape], x, 0, 0)\n        return movedShape\n      */\n      "
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4221",
+              "name": "geometry",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-4222",
+              "name": "i",
+              "type": "number"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4220",
+              "ap2ID": "id-4219"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4221",
+              "ap2ID": "id-4220"
+            },
+            {
+              "ap2Name": "i",
+              "ap1ID": "id-4222",
+              "ap2ID": "id-4220"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-16T18:23:39.056Z",
+            "privateRepo": false,
+            "repoName": "IthFromAssembly",
+            "dateCreated": "2026-07-13T17:35:57Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-2718",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/IthFromAssembly",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": "tristan-huber/IthFromAssembly",
+            "forks": 0,
+            "dateModified": "739810",
+            "ranking": 1.2,
+            "searchField": "ithfromassembly barboursmith used to index in and get or select the ith leaf from an assembly ",
+            "owner": "BarbourSmith",
+            "description": "Used to index in and get or select the ith leaf from an assembly",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1786907958367
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.35383597883597884,
+          "y": 0.6880222841225626,
+          "uniqueID": "id-4241",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.4365079365079365,
+          "y": 0.8857938718662952,
+          "uniqueID": "id-4264",
+          "name": "Center_XY",
+          "ioValues": [
+            {
+              "name": "Geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4258",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.42791005291005285,
+              "y": 0.2785515320334262,
+              "uniqueID": "id-4259",
+              "ioValues": [
+                {
+                  "name": "A",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "/**\n Inputs for this Code Atom:\n - Takes a single geometry input \"A\" and recenters it in the XY plane based on its bounding box.\n*/\nInputs = [\n  { inputName: \"A\", type: \"geometry\", defaultValue: null }\n]\n\nif (!A) {\n  // Nothing to do if no input provided\n  return null\n}\n\n// Get bounding box of A\nlet boundsA = await GetBounds(A);\n// boundsA.min and boundsA.max are arrays [x,y,z]\nlet min = boundsA.min\nlet max = boundsA.max\n\n// Compute the center of the bounding box in X and Y\nlet centerX = (min[0] + max[0]) / 2.0\nlet centerY = (min[1] + max[1]) / 2.0\n\n// Translation to move the bounding box center to the origin (0,0) in XY,\n// leaving Z unchanged.\nlet translationX = -centerX\nlet translationY = -centerY\nlet translationZ = 0\n\n// Move the shape. Move takes the input ID and translations (x,y,z)\nlet movedOutput = await Move(A, translationX, translationY, translationZ)\n\n// Return the moved shape. Move typically returns a replicad object suitable for return.\nreturn movedOutput"
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.1798941798941799,
+              "y": 0.6044568245125348,
+              "uniqueID": "id-4260",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.2798941798941799,
+              "y": 0.6044568245125348,
+              "uniqueID": "id-4261",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.46891534391534395,
+              "y": 0.6211699164345404,
+              "uniqueID": "id-4262",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 50
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 30
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4263",
+              "name": "Geometry",
+              "type": "geometry"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4259",
+              "ap2ID": "id-4258"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4260",
+              "ap2ID": "id-4261"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4261",
+              "ap2ID": "id-4262"
+            },
+            {
+              "ap2Name": "A",
+              "ap1ID": "id-4263",
+              "ap2ID": "id-4259"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-16T18:23:39.056Z",
+            "privateRepo": false,
+            "repoName": "Center_XY",
+            "dateCreated": "2025-12-04T19:44:27Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Center_XY/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "id-64",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Center_XY",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739589",
+            "ranking": 11.1,
+            "searchField": "center_xy barboursmith this takes an input shape and moves it to be centered on the xy plane ",
+            "owner": "BarbourSmith",
+            "description": "This takes an input shape and moves it to be centered on the XY plane",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Center_XY/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Center_XY/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1786907990611
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.5892857142857143,
+          "y": 0.9442896935933148,
+          "uniqueID": "id-4284",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Dino Body",
+              "currentEquation": "Dino Body"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Left"
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.3697089947089947,
+          "y": 0.2618384401114206,
+          "uniqueID": "id-4300",
+          "name": "Extract Brace",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [
+            "Brace"
+          ],
+          "includeUntagged": false,
+          "notKeepOut": false
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.3716931216931217,
+          "y": 0.4651810584958217,
+          "uniqueID": "id-4303",
+          "name": "IthFromAssembly",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "i",
+              "ioValue": 0
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4304",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.5026041666666666,
+              "y": 0.6845238095238095,
+              "uniqueID": "id-4305",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "i",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "\n      const Inputs = [\n       {inputName: \"geometry\", type: \"geometry\", defaultValue: null},\n      {inputName: \"i\", type: \"number\", defaultValue: 0},\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      //Gets the shape from the library - no need to clone or access geometry directly\n      let importedShape = library[geometry]\n      let j = 0;\n      console.log(\"foo\")\n      console.log(importedShape)\n      const leafList = await AssemblyAsIterable(importedShape)\n      console.log(leafList)\n      if (i >= leafList.length) {\n        throw new Error(`Assembly only has ${leafList.length} entries. Tried to find index: ${i}.`)\n      }\n      return leafList[i]\n\n\n      /**\n      Built-in Functions Available:\n      - Move(geometry, x, y, z) - Move a shape in 3D space\n      - Rotate(geometry, x, y, z) - Rotate a shape around X, Y, Z axes (degrees)\n      - Scale(geometry, factor) - Scale a shape by a factor\n      - Assembly([shapes]) - Combine multiple shapes into an assembly\n      - Intersect(shape1, shape2) - Boolean intersection of two shapes\n      - GetBounds(geometry) - Get the bounding box of a shape\n      - Fillet(geometry, radius) - Round edges with specified radius\n      - Chamfer(geometry, size) - Bevel edges with specified size\n\n      To Use the Code Atom, enter your inputs to the input list as an object array:\n      const Inputs = [\n        {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n        {inputName: \"dist\", type: \"number\", defaultValue: 5},\n        {inputName: \"height\", type: \"number\", defaultValue: 10}\n      ]\n\n      Access imported geometry using library[inputName] - the built-in functions handle \n      the complexity of accessing geometry arrays and maintaining metadata automatically.\n\n      Simple Example - Move a shape:\n         const Inputs = [\n          {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n          {inputName: \"x\", type: \"number\", defaultValue: 5}\n        ]\n        let movedShape = await Move(library[shape], x, 0, 0)\n        return movedShape\n      */\n      "
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4306",
+              "name": "geometry",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-4307",
+              "name": "i",
+              "type": "number"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4305",
+              "ap2ID": "id-4304"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4306",
+              "ap2ID": "id-4305"
+            },
+            {
+              "ap2Name": "i",
+              "ap1ID": "id-4307",
+              "ap2ID": "id-4305"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-16T18:23:39.056Z",
+            "privateRepo": false,
+            "repoName": "IthFromAssembly",
+            "dateCreated": "2026-07-13T17:35:57Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-2718",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/IthFromAssembly",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": "tristan-huber/IthFromAssembly",
+            "forks": 0,
+            "dateModified": "739810",
+            "ranking": 1.2,
+            "searchField": "ithfromassembly barboursmith used to index in and get or select the ith leaf from an assembly ",
+            "owner": "BarbourSmith",
+            "description": "Used to index in and get or select the ith leaf from an assembly",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/IthFromAssembly/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1786907958367
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.5423280423280423,
+          "y": 0.3593314763231198,
+          "uniqueID": "id-4319",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4173",
+          "ap2ID": "id-4177"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4176",
+          "ap2ID": "id-4223"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4176",
+          "ap2ID": "id-4300"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4176",
+          "ap2ID": "id-4303"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4177",
+          "ap2ID": "id-4176"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4193",
+          "ap2ID": "id-4171"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4223",
+          "ap2ID": "id-4241"
+        },
+        {
+          "ap2Name": "Geometry",
+          "ap1ID": "id-4241",
+          "ap2ID": "id-4264"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4264",
+          "ap2ID": "id-4284"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-4300",
+          "ap2ID": "id-4319"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-4303",
+          "ap2ID": "id-4319"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
@@ -14791,24 +15492,9 @@
       "ap2ID": "id-169"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-312",
-      "ap2ID": "id-594"
-    },
-    {
       "ap2Name": "Wood_Thickness",
       "ap1ID": "id-327",
       "ap2ID": "id-180"
-    },
-    {
-      "ap2Name": "Shape 3",
-      "ap1ID": "id-594",
-      "ap2ID": "id-169"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-1458",
-      "ap2ID": "id-312"
     },
     {
       "ap2Name": "geometry",
@@ -14821,9 +15507,9 @@
       "ap2ID": "id-169"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "input",
       "ap1ID": "id-180",
-      "ap2ID": "id-1458"
+      "ap2ID": "id-4169"
     }
   ],
   "unitsKey": "MM",
