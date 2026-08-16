@@ -97,13 +97,13 @@
           "downwardFaceIndex": 3
         },
         {
-          "downwardFaceIndex": 89
+          "downwardFaceIndex": 169
         },
         {
           "downwardFaceIndex": 0
         }
       ],
-      "orientationsForHashed": "95f391a0"
+      "orientationsForHashed": "d46da310"
     },
     {
       "atomType": "Input",
@@ -816,8 +816,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.48082010582010587,
-          "y": 0.479108635097493,
+          "x": 0.6051587301587301,
+          "y": 0.47075208913649025,
           "uniqueID": "id-307",
           "ioValues": [
             {
@@ -8006,8 +8006,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2552910052910053,
-          "y": 0.5626740947075208,
+          "x": 0.2612433862433862,
+          "y": 0.5877437325905293,
           "uniqueID": "id-840",
           "name": "Front Brace",
           "ioValues": [
@@ -8061,15 +8061,11 @@
                   "ioValue": null
                 },
                 {
-                  "name": "Shape 8",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 9",
-                  "ioValue": null
-                },
-                {
                   "name": "Shape 10",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 11",
                   "ioValue": null
                 }
               ]
@@ -8100,8 +8096,8 @@
             },
             {
               "atomType": "Rotate",
-              "x": 0.2281746031746032,
-              "y": 0.4902506963788301,
+              "x": 0.19444444444444442,
+              "y": 0.4428969359331476,
               "uniqueID": "id-891",
               "ioValues": [
                 {
@@ -14377,8 +14373,8 @@
             },
             {
               "atomType": "Rotate",
-              "x": 0.4404761904761905,
-              "y": 0.8495821727019498,
+              "x": 0.2447089947089947,
+              "y": 0.7242339832869081,
               "uniqueID": "id-4088",
               "ioValues": [
                 {
@@ -14401,8 +14397,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5720899470899471,
-              "y": 0.8774373259052926,
+              "x": 0.5085978835978836,
+              "y": 0.7520891364902507,
               "uniqueID": "id-4089",
               "ioValues": [
                 {
@@ -14426,8 +14422,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.7698412698412698,
-              "y": 0.9080779944289693,
+              "x": 0.7003968253968255,
+              "y": 0.7994428969359332,
               "uniqueID": "id-4090",
               "ioValues": [
                 {
@@ -14466,6 +14462,105 @@
               ],
               "includeUntagged": false,
               "notKeepOut": false
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.3108465608465608,
+              "y": 0.9192200557103064,
+              "uniqueID": "id-4119",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 90,
+                  "currentEquation": "90"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.39351851851851855,
+              "y": 0.7353760445682451,
+              "uniqueID": "id-4125",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 100,
+                  "currentEquation": "100"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.43253968253968256,
+              "y": 0.8969359331476323,
+              "uniqueID": "id-4131",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": -100,
+                  "currentEquation": "-100"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.7757936507936508,
+              "y": 0.9247910863509751,
+              "uniqueID": "id-4137",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 4",
+                  "ioValue": null
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -14561,21 +14656,70 @@
             },
             {
               "ap2Name": "geometry",
+              "ap1ID": "id-4088",
+              "ap2ID": "id-4119"
+            },
+            {
+              "ap2Name": "geometry",
               "ap1ID": "id-4089",
               "ap2ID": "id-4090"
             },
             {
-              "ap2Name": "Shape 8",
+              "ap2Name": "Shape 3",
               "ap1ID": "id-4089",
-              "ap2ID": "id-876"
+              "ap2ID": "id-4137"
             },
             {
-              "ap2Name": "Shape 9",
+              "ap2Name": "Shape 4",
               "ap1ID": "id-4090",
+              "ap2ID": "id-4137"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4119",
+              "ap2ID": "id-4125"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4119",
+              "ap2ID": "id-4131"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-4125",
+              "ap2ID": "id-4137"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-4131",
+              "ap2ID": "id-4137"
+            },
+            {
+              "ap2Name": "Shape 11",
+              "ap1ID": "id-4137",
               "ap2ID": "id-876"
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.7156084656084657,
+          "y": 0.6685236768802229,
+          "uniqueID": "id-4116",
+          "name": "Extract Wood",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [
+            "Wood"
+          ],
+          "includeUntagged": false,
+          "notKeepOut": false
         }
       ],
       "allConnectors": [
@@ -14613,6 +14757,11 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-307",
           "ap2ID": "id-182"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-307",
+          "ap2ID": "id-4116"
         },
         {
           "ap2Name": "Wood_Thickness",
