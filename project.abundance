@@ -26,8 +26,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7308201058201058,
-      "y": 0.44568245125348194,
+      "x": 0.6865079365079365,
+      "y": 0.4317548746518106,
       "uniqueID": "id-169",
       "ioValues": [
         {
@@ -46,8 +46,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6157407407407408,
-      "y": 0.7409470752089137,
+      "x": 0.5330687830687831,
+      "y": 0.713091922005571,
       "uniqueID": "id-173",
       "ioValues": [
         {
@@ -70,8 +70,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.41865079365079366,
-      "y": 0.21448467966573817,
+      "x": 0.3849206349206349,
+      "y": 0.18662952646239553,
       "uniqueID": "id-312",
       "name": "Cut Orient",
       "ioValues": [
@@ -103,7 +103,7 @@
           "downwardFaceIndex": 0
         }
       ],
-      "orientationsForHashed": "d46da310"
+      "orientationsForHashed": "d35a36a8"
     },
     {
       "atomType": "Input",
@@ -114,8 +114,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5357142857142857,
-      "y": 0.23676880222841226,
+      "x": 0.5568783068783069,
+      "y": 0.1894150417827298,
       "uniqueID": "id-594",
       "ioValues": [
         {
@@ -138,8 +138,8 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.3273809523809524,
-      "y": 0.16434540389972147,
+      "x": 0.25925925925925924,
+      "y": 0.17827298050139276,
       "uniqueID": "id-1458",
       "name": "Extract Wood",
       "ioValues": [
@@ -157,8 +157,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.4543650793650794,
-      "y": 0.67966573816156,
+      "x": 0.36772486772486773,
+      "y": 0.7465181058495821,
       "uniqueID": "id-106",
       "name": "Person-For-Scale",
       "topLevel": false,
@@ -702,8 +702,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.22552910052910055,
-      "y": 0.4512534818941504,
+      "x": 0.14153439153439154,
+      "y": 0.44011142061281333,
       "uniqueID": "id-180",
       "name": "Make Sign",
       "ioValues": [
@@ -1264,8 +1264,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.21626984126984128,
-          "y": 0.6991643454038997,
+          "x": 0.24206349206349206,
+          "y": 0.713091922005571,
           "uniqueID": "id-316",
           "name": "Rear Brace",
           "ioValues": [
@@ -7138,8 +7138,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.28968253968253965,
-          "y": 0.8328690807799443,
+          "x": 0.2208994708994709,
+          "y": 0.871866295264624,
           "uniqueID": "id-1439",
           "name": "Neck Brace",
           "ioValues": [
@@ -8006,8 +8006,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2612433862433862,
-          "y": 0.5877437325905293,
+          "x": 0.24933862433862436,
+          "y": 0.5348189415041783,
           "uniqueID": "id-840",
           "name": "Front Brace",
           "ioValues": [
@@ -14398,7 +14398,7 @@
             {
               "atomType": "Move",
               "x": 0.5085978835978836,
-              "y": 0.7520891364902507,
+              "y": 0.7688022284122563,
               "uniqueID": "id-4089",
               "ioValues": [
                 {
@@ -14422,8 +14422,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.7003968253968255,
-              "y": 0.7994428969359332,
+              "x": 0.6937830687830687,
+              "y": 0.8105849582172702,
               "uniqueID": "id-4090",
               "ioValues": [
                 {
@@ -14490,8 +14490,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.39351851851851855,
-              "y": 0.7353760445682451,
+              "x": 0.4933862433862434,
+              "y": 0.9303621169916434,
               "uniqueID": "id-4125",
               "ioValues": [
                 {
@@ -14500,33 +14500,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 100,
-                  "currentEquation": "100"
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 0
-                }
-              ]
-            },
-            {
-              "atomType": "Move",
-              "x": 0.43253968253968256,
-              "y": 0.8969359331476323,
-              "uniqueID": "id-4131",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": -100,
-                  "currentEquation": "-100"
+                  "ioValue": 65,
+                  "currentEquation": "65"
                 },
                 {
                   "name": "yDist",
@@ -14545,19 +14520,11 @@
               "uniqueID": "id-4137",
               "ioValues": [
                 {
-                  "name": "Shape 1",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 2",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 3",
-                  "ioValue": null
-                },
-                {
                   "name": "Shape 4",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 7",
                   "ioValue": null
                 }
               ]
@@ -14665,7 +14632,7 @@
               "ap2ID": "id-4090"
             },
             {
-              "ap2Name": "Shape 3",
+              "ap2Name": "Shape 7",
               "ap1ID": "id-4089",
               "ap2ID": "id-4137"
             },
@@ -14680,46 +14647,12 @@
               "ap2ID": "id-4125"
             },
             {
-              "ap2Name": "geometry",
-              "ap1ID": "id-4119",
-              "ap2ID": "id-4131"
-            },
-            {
-              "ap2Name": "Shape 2",
-              "ap1ID": "id-4125",
-              "ap2ID": "id-4137"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-4131",
-              "ap2ID": "id-4137"
-            },
-            {
               "ap2Name": "Shape 11",
               "ap1ID": "id-4137",
               "ap2ID": "id-876"
             }
           ],
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "ExtractTag",
-          "x": 0.7156084656084657,
-          "y": 0.6685236768802229,
-          "uniqueID": "id-4116",
-          "name": "Extract Wood",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "tagIndex": 0,
-          "selectedTags": [
-            "Wood"
-          ],
-          "includeUntagged": false,
-          "notKeepOut": false
         }
       ],
       "allConnectors": [
@@ -14757,11 +14690,6 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-307",
           "ap2ID": "id-182"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-307",
-          "ap2ID": "id-4116"
         },
         {
           "ap2Name": "Wood_Thickness",
@@ -14824,6 +14752,30 @@
           "ap2ID": "id-1156"
         }
       ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.5873015873015873,
+      "y": 0.871866295264624,
+      "uniqueID": "id-4169",
+      "name": "Generate Gcode",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4171",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
       "fileTypeVersion": 1
     }
   ],
