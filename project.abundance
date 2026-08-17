@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "Wood_Thickness",
-      "ioValue": 12.5,
-      "currentEquation": "12.5"
+      "ioValue": 12.5
     }
   ],
   "topLevel": true,
@@ -686,7 +685,7 @@
               "downwardFaceIndex": 0
             }
           ],
-          "orientationsForHashed": "e66222f7"
+          "orientationsForHashed": "8f649624"
         },
         {
           "atomType": "ExtractTag",
@@ -733,8 +732,8 @@
         },
         {
           "atomType": "Gcode",
-          "x": 0.6031746031746031,
-          "y": 0.8022284122562675,
+          "x": 0.6071428571428572,
+          "y": 0.7883008356545962,
           "uniqueID": "id-4284",
           "ioValues": [
             {
@@ -747,8 +746,7 @@
             },
             {
               "name": "Passes",
-              "ioValue": 2,
-              "currentEquation": "2"
+              "ioValue": 2
             },
             {
               "name": "Speed",
@@ -756,13 +754,12 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 2,
-              "currentEquation": "2"
+              "ioValue": 2
             },
             {
               "name": "Part Name",
-              "ioValue": "Dino Body",
-              "currentEquation": "Dino Body"
+              "ioValue": "Dino Body Updated",
+              "currentEquation": "Dino Body Updated"
             }
           ],
           "partName": "Generate Gcode",
@@ -824,8 +821,7 @@
             },
             {
               "name": "Part Padding",
-              "ioValue": 20,
-              "currentEquation": "20"
+              "ioValue": 20
             },
             {
               "name": "Orientations",
@@ -884,6 +880,41 @@
               }
             ]
           ]
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.7076719576719577,
+          "y": 0.5069637883008357,
+          "uniqueID": "id-6155",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Dino Body",
+              "currentEquation": "Dino Body"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Left"
         },
         {
           "atomType": "GitHubMolecule",
@@ -1432,41 +1463,6 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1786907958367
-        },
-        {
-          "atomType": "Gcode",
-          "x": 0.7076719576719577,
-          "y": 0.5069637883008357,
-          "uniqueID": "id-6155",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Tool Size",
-              "ioValue": 6.35
-            },
-            {
-              "name": "Passes",
-              "ioValue": 1
-            },
-            {
-              "name": "Speed",
-              "ioValue": 1500
-            },
-            {
-              "name": "Cut Through",
-              "ioValue": 0
-            },
-            {
-              "name": "Part Name",
-              "ioValue": "Dino Body",
-              "currentEquation": "Dino Body"
-            }
-          ],
-          "partName": "Generate Gcode",
-          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
