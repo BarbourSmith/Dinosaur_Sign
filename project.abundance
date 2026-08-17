@@ -679,13 +679,13 @@
               "downwardFaceIndex": 3
             },
             {
-              "downwardFaceIndex": 170
+              "downwardFaceIndex": 169
             },
             {
               "downwardFaceIndex": 0
             }
           ],
-          "orientationsForHashed": "8f649624"
+          "orientationsForHashed": "331ebbb4"
         },
         {
           "atomType": "ExtractTag",
@@ -2280,8 +2280,8 @@
             },
             {
               "atomType": "GitHubMolecule",
-              "x": 0.2612433862433862,
-              "y": 0.8161559888579387,
+              "x": 0.17724867724867727,
+              "y": 0.532033426183844,
               "uniqueID": "id-1842",
               "name": "14-20-Hex-Bolt",
               "ioValues": [
@@ -2919,6 +2919,163 @@
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Molecule",
+              "x": 0.23412698412698413,
+              "y": 0.7994428969359332,
+              "uniqueID": "id-8011",
+              "name": "Give Clearence",
+              "ioValues": [
+                {
+                  "name": "Wood_Thickness",
+                  "ioValue": 12.5
+                },
+                {
+                  "name": "input",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-8013",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.12367724867724868,
+                  "y": 0.5348189415041783,
+                  "uniqueID": "id-8015",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 10
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.2722222222222222,
+                  "y": 0.8357938718662952,
+                  "uniqueID": "id-8016",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": -12.5
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.11746031746031746,
+                  "y": 0.768941504178273,
+                  "uniqueID": "id-8017",
+                  "name": "-1*T",
+                  "ioValues": [
+                    {
+                      "name": "T",
+                      "ioValue": 12.5
+                    }
+                  ],
+                  "currentEquation": "-1*T"
+                },
+                {
+                  "atomType": "Color",
+                  "x": 0.31283068783068785,
+                  "y": 0.5292479108635098,
+                  "uniqueID": "id-8018",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "selectedColor": "Keep Out"
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.38888888888888884,
+                  "y": 0.20891364902506962,
+                  "uniqueID": "id-8019",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 2",
+                      "ioValue": null
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.6573816155988859,
+                  "uniqueID": "id-8037",
+                  "name": "Wood_Thickness",
+                  "type": "number"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.24615384615384617,
+                  "uniqueID": "id-8040",
+                  "name": "input",
+                  "type": "geometry"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-8015",
+                  "ap2ID": "id-8016"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-8016",
+                  "ap2ID": "id-8018"
+                },
+                {
+                  "ap2Name": "height",
+                  "ap1ID": "id-8017",
+                  "ap2ID": "id-8016"
+                },
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-8018",
+                  "ap2ID": "id-8019"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-8019",
+                  "ap2ID": "id-8013"
+                },
+                {
+                  "ap2Name": "T",
+                  "ap1ID": "id-8037",
+                  "ap2ID": "id-8017"
+                },
+                {
+                  "ap2Name": "Shape 2",
+                  "ap1ID": "id-8040",
+                  "ap2ID": "id-8019"
+                }
+              ],
+              "fileTypeVersion": 1
             }
           ],
           "allConnectors": [
@@ -2926,6 +3083,11 @@
               "ap2Name": "Wood_Thickness",
               "ap1ID": "id-1819",
               "ap2ID": "id-1640"
+            },
+            {
+              "ap2Name": "Wood_Thickness",
+              "ap1ID": "id-1819",
+              "ap2ID": "id-8011"
             },
             {
               "ap2Name": "geometry",
@@ -2973,14 +3135,19 @@
               "ap2ID": "id-1441"
             },
             {
-              "ap2Name": "geometry",
+              "ap2Name": "input",
               "ap1ID": "id-1842",
-              "ap2ID": "id-1876"
+              "ap2ID": "id-8011"
             },
             {
               "ap2Name": "Shape 2",
               "ap1ID": "id-1640",
               "ap2ID": "id-1822"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-8011",
+              "ap2ID": "id-1876"
             }
           ],
           "fileTypeVersion": 1
@@ -2988,7 +3155,7 @@
         {
           "atomType": "Molecule",
           "x": 0.24801587301587302,
-          "y": 0.7103064066852367,
+          "y": 0.7047353760445683,
           "uniqueID": "id-316",
           "name": "Rear Brace",
           "ioValues": [
@@ -4677,8 +4844,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.12367724867724868,
-              "y": 0.871866295264624,
+              "x": 0.12566137566137567,
+              "y": 0.8913649025069639,
               "uniqueID": "id-2811",
               "name": "Bolt Assembly",
               "ioValues": [
@@ -8676,6 +8843,163 @@
                   "unitsKey": "MM",
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1786906726015
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.2533068783068783,
+                  "y": 0.47075208913649025,
+                  "uniqueID": "id-8044",
+                  "name": "Give Clearence",
+                  "ioValues": [
+                    {
+                      "name": "Wood_Thickness",
+                      "ioValue": 12.5
+                    },
+                    {
+                      "name": "input",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-8045",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Circle",
+                      "x": 0.12367724867724868,
+                      "y": 0.5348189415041783,
+                      "uniqueID": "id-8046",
+                      "ioValues": [
+                        {
+                          "name": "diameter",
+                          "ioValue": 10
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.2722222222222222,
+                      "y": 0.8357938718662952,
+                      "uniqueID": "id-8047",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": -12.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Equation",
+                      "x": 0.11746031746031746,
+                      "y": 0.768941504178273,
+                      "uniqueID": "id-8048",
+                      "name": "-1*T",
+                      "ioValues": [
+                        {
+                          "name": "T",
+                          "ioValue": 12.5
+                        }
+                      ],
+                      "currentEquation": "-1*T"
+                    },
+                    {
+                      "atomType": "Color",
+                      "x": 0.31283068783068785,
+                      "y": 0.5292479108635098,
+                      "uniqueID": "id-8049",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "selectedColor": "Keep Out"
+                    },
+                    {
+                      "atomType": "Assembly",
+                      "x": 0.38888888888888884,
+                      "y": 0.20891364902506962,
+                      "uniqueID": "id-8050",
+                      "ioValues": [
+                        {
+                          "name": "Shape 1",
+                          "ioValue": null
+                        },
+                        {
+                          "name": "Shape 2",
+                          "ioValue": null
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.025384615384615384,
+                      "y": 0.15384615384615385,
+                      "uniqueID": "id-8051",
+                      "name": "Wood_Thickness",
+                      "type": "number"
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.025384615384615384,
+                      "y": 0.24615384615384617,
+                      "uniqueID": "id-8052",
+                      "name": "input",
+                      "type": "geometry"
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-8046",
+                      "ap2ID": "id-8047"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-8047",
+                      "ap2ID": "id-8049"
+                    },
+                    {
+                      "ap2Name": "height",
+                      "ap1ID": "id-8048",
+                      "ap2ID": "id-8047"
+                    },
+                    {
+                      "ap2Name": "Shape 1",
+                      "ap1ID": "id-8049",
+                      "ap2ID": "id-8050"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-8050",
+                      "ap2ID": "id-8045"
+                    },
+                    {
+                      "ap2Name": "T",
+                      "ap1ID": "id-8051",
+                      "ap2ID": "id-8048"
+                    },
+                    {
+                      "ap2Name": "Shape 2",
+                      "ap1ID": "id-8052",
+                      "ap2ID": "id-8050"
+                    }
+                  ],
+                  "fileTypeVersion": 1
                 }
               ],
               "allConnectors": [
@@ -8700,14 +9024,24 @@
                   "ap2ID": "id-3414"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Wood_Thickness",
+                  "ap1ID": "id-3431",
+                  "ap2ID": "id-8044"
+                },
+                {
+                  "ap2Name": "input",
                   "ap1ID": "id-2816",
-                  "ap2ID": "id-2815"
+                  "ap2ID": "id-8044"
                 },
                 {
                   "ap2Name": "geometry",
                   "ap1ID": "id-3011",
                   "ap2ID": "id-3418"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-8044",
+                  "ap2ID": "id-2815"
                 }
               ],
               "fileTypeVersion": 1
@@ -15327,6 +15661,163 @@
                   "unitsKey": "MM",
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1786906726015
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.19973544973544974,
+                  "y": 0.5487465181058496,
+                  "uniqueID": "id-8074",
+                  "name": "Give Clearence",
+                  "ioValues": [
+                    {
+                      "name": "Wood_Thickness",
+                      "ioValue": 12.5
+                    },
+                    {
+                      "name": "input",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-8075",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Circle",
+                      "x": 0.12367724867724868,
+                      "y": 0.5348189415041783,
+                      "uniqueID": "id-8076",
+                      "ioValues": [
+                        {
+                          "name": "diameter",
+                          "ioValue": 10
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.2722222222222222,
+                      "y": 0.8357938718662952,
+                      "uniqueID": "id-8077",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": -12.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Equation",
+                      "x": 0.11746031746031746,
+                      "y": 0.768941504178273,
+                      "uniqueID": "id-8078",
+                      "name": "-1*T",
+                      "ioValues": [
+                        {
+                          "name": "T",
+                          "ioValue": 12.5
+                        }
+                      ],
+                      "currentEquation": "-1*T"
+                    },
+                    {
+                      "atomType": "Color",
+                      "x": 0.31283068783068785,
+                      "y": 0.5292479108635098,
+                      "uniqueID": "id-8079",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "selectedColor": "Keep Out"
+                    },
+                    {
+                      "atomType": "Assembly",
+                      "x": 0.38888888888888884,
+                      "y": 0.20891364902506962,
+                      "uniqueID": "id-8080",
+                      "ioValues": [
+                        {
+                          "name": "Shape 1",
+                          "ioValue": null
+                        },
+                        {
+                          "name": "Shape 2",
+                          "ioValue": null
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.025384615384615384,
+                      "y": 0.15384615384615385,
+                      "uniqueID": "id-8081",
+                      "name": "Wood_Thickness",
+                      "type": "number"
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.025384615384615384,
+                      "y": 0.24615384615384617,
+                      "uniqueID": "id-8082",
+                      "name": "input",
+                      "type": "geometry"
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-8076",
+                      "ap2ID": "id-8077"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-8077",
+                      "ap2ID": "id-8079"
+                    },
+                    {
+                      "ap2Name": "height",
+                      "ap1ID": "id-8078",
+                      "ap2ID": "id-8077"
+                    },
+                    {
+                      "ap2Name": "Shape 1",
+                      "ap1ID": "id-8079",
+                      "ap2ID": "id-8080"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-8080",
+                      "ap2ID": "id-8075"
+                    },
+                    {
+                      "ap2Name": "T",
+                      "ap1ID": "id-8081",
+                      "ap2ID": "id-8078"
+                    },
+                    {
+                      "ap2Name": "Shape 2",
+                      "ap1ID": "id-8082",
+                      "ap2ID": "id-8080"
+                    }
+                  ],
+                  "fileTypeVersion": 1
                 }
               ],
               "allConnectors": [
@@ -15351,14 +15842,24 @@
                   "ap2ID": "id-3599"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Wood_Thickness",
+                  "ap1ID": "id-3602",
+                  "ap2ID": "id-8074"
+                },
+                {
+                  "ap2Name": "input",
                   "ap1ID": "id-3446",
-                  "ap2ID": "id-3445"
+                  "ap2ID": "id-8074"
                 },
                 {
                   "ap2Name": "geometry",
                   "ap1ID": "id-3458",
                   "ap2ID": "id-3600"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-8074",
+                  "ap2ID": "id-3445"
                 }
               ],
               "fileTypeVersion": 1
