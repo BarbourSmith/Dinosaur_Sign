@@ -679,7 +679,7 @@
               "downwardFaceIndex": 3
             },
             {
-              "downwardFaceIndex": 169
+              "downwardFaceIndex": 170
             },
             {
               "downwardFaceIndex": 0
@@ -758,8 +758,8 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "Dino Body Updated",
-              "currentEquation": "Dino Body Updated"
+              "ioValue": "Dino Body Bigger Holes",
+              "currentEquation": "Dino Body Bigger Holes"
             }
           ],
           "partName": "Generate Gcode",
@@ -802,8 +802,8 @@
         },
         {
           "atomType": "CutLayout",
-          "x": 0.6144179894179894,
-          "y": 0.30919220055710306,
+          "x": 0.6137566137566137,
+          "y": 0.233983286908078,
           "uniqueID": "id-4324",
           "name": "Cut Layout",
           "ioValues": [
