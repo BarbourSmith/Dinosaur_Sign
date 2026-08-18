@@ -884,8 +884,8 @@
         },
         {
           "atomType": "Gcode",
-          "x": 0.7076719576719577,
-          "y": 0.5069637883008357,
+          "x": 0.7387566137566137,
+          "y": 0.3342618384401114,
           "uniqueID": "id-6155",
           "ioValues": [
             {
@@ -1468,27 +1468,152 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.5992063492063492,
-          "y": 0.47632311977715874,
-          "uniqueID": "id-9981",
-          "name": "Github Molecule",
+          "x": 0.742063492063492,
+          "y": 0.83008356545961,
+          "uniqueID": "id-9990",
+          "name": "IthFromAssembly",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "i",
+              "ioValue": 1
+            }
+          ],
           "topLevel": false,
           "allAtoms": [
             {
               "atomType": "Output",
               "x": 0.98,
               "y": 0.5,
-              "uniqueID": "id-9983",
+              "uniqueID": "id-9986",
               "ioValues": [
                 {
                   "name": "number or geometry",
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.5026041666666666,
+              "y": 0.6845238095238095,
+              "uniqueID": "id-9987",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "i",
+                  "ioValue": 1
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "\n      const Inputs = [\n       {inputName: \"geometry\", type: \"geometry\", defaultValue: null},\n      {inputName: \"i\", type: \"number\", defaultValue: 0},\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      //Gets the shape from the library - no need to clone or access geometry directly\n      let importedShape = library[geometry]\n      let j = 0;\n      console.log(\"foo\")\n      console.log(importedShape)\n      const leafList = await AssemblyAsIterable(importedShape)\n      console.log(leafList)\n      if (i >= leafList.length) {\n        throw new Error(`Assembly only has ${leafList.length} entries. Tried to find index: ${i}.`)\n      }\n      return leafList[i]\n\n\n      /**\n      Built-in Functions Available:\n      - Move(geometry, x, y, z) - Move a shape in 3D space\n      - Rotate(geometry, x, y, z) - Rotate a shape around X, Y, Z axes (degrees)\n      - Scale(geometry, factor) - Scale a shape by a factor\n      - Assembly([shapes]) - Combine multiple shapes into an assembly\n      - Intersect(shape1, shape2) - Boolean intersection of two shapes\n      - GetBounds(geometry) - Get the bounding box of a shape\n      - Fillet(geometry, radius) - Round edges with specified radius\n      - Chamfer(geometry, size) - Bevel edges with specified size\n\n      To Use the Code Atom, enter your inputs to the input list as an object array:\n      const Inputs = [\n        {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n        {inputName: \"dist\", type: \"number\", defaultValue: 5},\n        {inputName: \"height\", type: \"number\", defaultValue: 10}\n      ]\n\n      Access imported geometry using library[inputName] - the built-in functions handle \n      the complexity of accessing geometry arrays and maintaining metadata automatically.\n\n      Simple Example - Move a shape:\n         const Inputs = [\n          {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n          {inputName: \"x\", type: \"number\", defaultValue: 5}\n        ]\n        let movedShape = await Move(library[shape], x, 0, 0)\n        return movedShape\n      */\n      "
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-9988",
+              "name": "geometry",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-9989",
+              "name": "i",
+              "type": "number"
             }
           ],
-          "allConnectors": [],
-          "fileTypeVersion": 1
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-9987",
+              "ap2ID": "id-9986"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-9988",
+              "ap2ID": "id-9987"
+            },
+            {
+              "ap2Name": "i",
+              "ap1ID": "id-9989",
+              "ap2ID": "id-9987"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-18T02:23:39.098Z",
+            "privateRepo": false,
+            "repoName": "IthFromAssembly",
+            "dateCreated": "2025-11-03T02:49:44Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/tristan-huber/IthFromAssembly/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "id-2718",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/tristan-huber/IthFromAssembly",
+            "topics": [
+              "abundance-tool"
+            ],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 1,
+            "dateModified": "739558",
+            "ranking": 10.4,
+            "searchField": "ithfromassembly tristan-huber get the ith leaf from an assembly abundance-tool",
+            "owner": "tristan-huber",
+            "description": "Get the ith leaf from an assembly",
+            "contentURL": "https://raw.githubusercontent.com/tristan-huber/IthFromAssembly/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/tristan-huber/IthFromAssembly/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1787028057498
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.8353174603174603,
+          "y": 0.6545961002785515,
+          "uniqueID": "id-10002",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 2000,
+              "currentEquation": "2000"
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 3.1,
+              "currentEquation": "3.1"
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Arc Deeper2",
+              "currentEquation": "Arc Deeper2"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Top"
         }
       ],
       "allConnectors": [
@@ -1538,6 +1663,11 @@
           "ap2ID": "id-6155"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4324",
+          "ap2ID": "id-9990"
+        },
+        {
           "ap2Name": "number or geometry",
           "ap1ID": "id-4193",
           "ap2ID": "id-4171"
@@ -1556,6 +1686,11 @@
           "ap2Name": "Shape 1",
           "ap1ID": "id-4303",
           "ap2ID": "id-4319"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-9990",
+          "ap2ID": "id-10002"
         }
       ],
       "fileTypeVersion": 1
