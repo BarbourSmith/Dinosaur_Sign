@@ -1603,13 +1603,13 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 3.1,
-              "currentEquation": "3.1"
+              "ioValue": 1,
+              "currentEquation": "1"
             },
             {
               "name": "Part Name",
-              "ioValue": "Arc Deeper2",
-              "currentEquation": "Arc Deeper2"
+              "ioValue": "Arc Deeper3",
+              "currentEquation": "Arc Deeper3"
             }
           ],
           "partName": "Generate Gcode",
@@ -1697,8 +1697,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.14153439153439154,
-      "y": 0.44011142061281333,
+      "x": 0.14219576719576718,
+      "y": 0.42896935933147634,
       "uniqueID": "id-180",
       "name": "Make Sign",
       "ioValues": [
@@ -3686,7 +3686,7 @@
                 },
                 {
                   "name": "Thickness",
-                  "ioValue": 10
+                  "ioValue": 12.5
                 }
               ],
               "topLevel": false,
@@ -3790,7 +3790,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": 10
+                      "ioValue": 12.5
                     }
                   ]
                 },
@@ -9233,6 +9233,11 @@
               "ap2Name": "Wood_Thickness",
               "ap1ID": "id-336",
               "ap2ID": "id-2811"
+            },
+            {
+              "ap2Name": "Thickness",
+              "ap1ID": "id-336",
+              "ap2ID": "id-486"
             },
             {
               "ap2Name": "geometry",
