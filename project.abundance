@@ -868,7 +868,7 @@
                 "rotate": 90,
                 "translate": {
                   "x": 1500,
-                  "y": -1990
+                  "y": -1950
                 }
               },
               {
@@ -876,7 +876,7 @@
                 "rotate": 90,
                 "translate": {
                   "x": 1121.1199951171875,
-                  "y": -2334.7099609375
+                  "y": -2330.7099609375
                 }
               }
             ]
@@ -898,15 +898,16 @@
             },
             {
               "name": "Passes",
-              "ioValue": 1
+              "ioValue": 2
             },
             {
               "name": "Speed",
-              "ioValue": 1500
+              "ioValue": 2000
             },
             {
               "name": "Cut Through",
-              "ioValue": 0
+              "ioValue": 1,
+              "currentEquation": "1"
             },
             {
               "name": "Part Name",
@@ -915,7 +916,7 @@
             }
           ],
           "partName": "Generate Gcode",
-          "sortDirection": "Left"
+          "sortDirection": "Bottom"
         },
         {
           "atomType": "GitHubMolecule",
@@ -1514,7 +1515,7 @@
         },
         {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-4324",
+          "ap1ID": "id-4193",
           "ap2ID": "id-4171"
         },
         {
@@ -2652,7 +2653,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": -12.5
+                      "ioValue": -25
                     }
                   ]
                 },
@@ -2661,14 +2662,14 @@
                   "x": 0.11746031746031746,
                   "y": 0.768941504178273,
                   "uniqueID": "id-8017",
-                  "name": "-1*T",
+                  "name": "-2*T",
                   "ioValues": [
                     {
                       "name": "T",
                       "ioValue": 12.5
                     }
                   ],
-                  "currentEquation": "-1*T"
+                  "currentEquation": "-2*T"
                 },
                 {
                   "atomType": "Color",
@@ -3155,8 +3156,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.24801587301587302,
-          "y": 0.7047353760445683,
+          "x": 0.24933862433862436,
+          "y": 0.6880222841225626,
           "uniqueID": "id-316",
           "name": "Rear Brace",
           "ioValues": [
