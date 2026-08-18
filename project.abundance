@@ -754,8 +754,7 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 2,
-              "currentEquation": "2"
+              "ioValue": 2
             },
             {
               "name": "Part Name",
@@ -906,8 +905,7 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 1,
-              "currentEquation": "1"
+              "ioValue": 1
             },
             {
               "name": "Part Name",
@@ -917,6 +915,41 @@
           ],
           "partName": "Generate Gcode",
           "sortDirection": "Bottom"
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.8353174603174603,
+          "y": 0.6545961002785515,
+          "uniqueID": "id-10002",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 2000
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 1
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Arc Deeper3",
+              "currentEquation": "Arc Deeper3"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Top"
         },
         {
           "atomType": "GitHubMolecule",
@@ -1577,43 +1610,6 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1787028057498
-        },
-        {
-          "atomType": "Gcode",
-          "x": 0.8353174603174603,
-          "y": 0.6545961002785515,
-          "uniqueID": "id-10002",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Tool Size",
-              "ioValue": 6.35
-            },
-            {
-              "name": "Passes",
-              "ioValue": 1
-            },
-            {
-              "name": "Speed",
-              "ioValue": 2000,
-              "currentEquation": "2000"
-            },
-            {
-              "name": "Cut Through",
-              "ioValue": 1,
-              "currentEquation": "1"
-            },
-            {
-              "name": "Part Name",
-              "ioValue": "Arc Deeper3",
-              "currentEquation": "Arc Deeper3"
-            }
-          ],
-          "partName": "Generate Gcode",
-          "sortDirection": "Top"
         }
       ],
       "allConnectors": [
