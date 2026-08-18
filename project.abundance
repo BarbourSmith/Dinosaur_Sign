@@ -860,7 +860,7 @@
                 "rotate": 90,
                 "translate": {
                   "x": 950.72998046875,
-                  "y": -1352.110107421875
+                  "y": -1330.110107421875
                 }
               },
               {
@@ -911,8 +911,8 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "Dino Body",
-              "currentEquation": "Dino Body"
+              "ioValue": "Dino Head",
+              "currentEquation": "Dino Head"
             }
           ],
           "partName": "Generate Gcode",
