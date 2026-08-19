@@ -37,6 +37,10 @@
         {
           "name": "Shape 2",
           "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
         }
       ]
     },
@@ -618,13 +622,17 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.20701058201058203,
-      "y": 0.6601671309192201,
+      "x": 0.2394179894179894,
+      "y": 0.5793871866295265,
       "uniqueID": "id-4169",
       "name": "Generate Gcode",
       "ioValues": [
         {
           "name": "input",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "input_1",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
@@ -1610,6 +1618,49 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1787028057498
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.6295264623955432,
+          "uniqueID": "id-12010",
+          "name": "input_1",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.1832010582010582,
+          "y": 0.6406685236768802,
+          "uniqueID": "id-12013",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 2000
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 2
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Single Pass Dino Body Bigger Holes",
+              "currentEquation": "Single Pass Dino Body Bigger Holes"
+            }
+          ],
+          "partName": "Generate Gcode",
+          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
@@ -1687,6 +1738,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-9990",
           "ap2ID": "id-10002"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12010",
+          "ap2ID": "id-12013"
         }
       ],
       "fileTypeVersion": 1
@@ -16253,8 +16309,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.20965608465608468,
-      "y": 0.8551532033426184,
+      "x": 0.20701058201058203,
+      "y": 0.8802228412256267,
       "uniqueID": "id-11918",
       "name": "Sign",
       "ioValues": [
@@ -16279,15 +16335,15 @@
         },
         {
           "atomType": "Import",
-          "x": 0.13955026455026454,
-          "y": 0.5905292479108635,
+          "x": 0.14417989417989419,
+          "y": 0.5821727019498607,
           "uniqueID": "id-11922",
           "fileName": "dinosaur-motel-sign-panel.svg",
           "name": "Import",
           "type": "SVG",
           "repoOwner": "BarbourSmith",
           "repoName": "Dinosaur_Sign",
-          "SVGwidth": 500
+          "SVGwidth": 900
         },
         {
           "atomType": "Input",
@@ -16299,8 +16355,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.26521164021164023,
-          "y": 0.5487465181058496,
+          "x": 0.27314814814814814,
+          "y": 0.5543175487465182,
           "uniqueID": "id-11927",
           "ioValues": [
             {
@@ -16314,22 +16370,9 @@
           ]
         },
         {
-          "atomType": "Color",
-          "x": 0.5615079365079365,
-          "y": 0.6044568245125348,
-          "uniqueID": "id-11931",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "selectedColor": "Olive"
-        },
-        {
           "atomType": "GitHubMolecule",
-          "x": 0.416005291005291,
-          "y": 0.6740947075208913,
+          "x": 0.41931216931216936,
+          "y": 0.7158774373259054,
           "uniqueID": "id-11963",
           "name": "Mirror",
           "ioValues": [
@@ -16339,7 +16382,8 @@
             },
             {
               "name": "Pivot",
-              "ioValue": 90
+              "ioValue": 90,
+              "currentEquation": "90"
             },
             {
               "name": "Plane",
@@ -16624,6 +16668,85 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1787160994261
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6190476190476191,
+          "y": 0.6239554317548747,
+          "uniqueID": "id-12003",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 180,
+              "currentEquation": "180"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.33465608465608465,
+          "y": 0.31197771587743733,
+          "uniqueID": "id-12020",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 15,
+              "currentEquation": "15"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.43465608465608463,
+          "y": 0.31197771587743733,
+          "uniqueID": "id-12023",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 100,
+              "currentEquation": "100"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5211640211640212,
+          "y": 0.32869080779944293,
+          "uniqueID": "id-12027",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -400
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -16638,19 +16761,29 @@
           "ap2ID": "id-11927"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-11927",
-          "ap2ID": "id-11931"
-        },
-        {
           "ap2Name": "Shape",
           "ap1ID": "id-11927",
           "ap2ID": "id-11963"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-11963",
+          "ap2ID": "id-12003"
+        },
+        {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-11931",
+          "ap1ID": "id-12003",
           "ap2ID": "id-11920"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12020",
+          "ap2ID": "id-12023"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12023",
+          "ap2ID": "id-12027"
         }
       ],
       "fileTypeVersion": 1
@@ -16682,8 +16815,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.4788359788359788,
-      "y": 0.796657381615599,
+      "x": 0.47949735449735453,
+      "y": 0.777158774373259,
       "uniqueID": "id-11940",
       "ioValues": [
         {
@@ -16692,8 +16825,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": 700,
-          "currentEquation": "700"
+          "ioValue": 1000,
+          "currentEquation": "1000"
         },
         {
           "name": "yDist",
@@ -16702,8 +16835,8 @@
         },
         {
           "name": "zDist",
-          "ioValue": 1500,
-          "currentEquation": "1500"
+          "ioValue": 1800,
+          "currentEquation": "1800"
         }
       ]
     }
@@ -16750,9 +16883,19 @@
       "ap2ID": "id-11934"
     },
     {
+      "ap2Name": "input_1",
+      "ap1ID": "id-11918",
+      "ap2ID": "id-4169"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-11934",
       "ap2ID": "id-11940"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-11940",
+      "ap2ID": "id-169"
     }
   ],
   "unitsKey": "MM",
