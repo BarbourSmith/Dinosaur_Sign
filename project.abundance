@@ -10054,8 +10054,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.251984126984127,
-          "y": 0.5403899721448467,
+          "x": 0.2566137566137566,
+          "y": 0.532033426183844,
           "uniqueID": "id-840",
           "name": "Front Brace",
           "ioValues": [
@@ -10719,8 +10719,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.39285714285714285,
-              "y": 0.0807799442896936,
+              "x": 0.39351851851851855,
+              "y": 0.09192200557103064,
               "uniqueID": "id-894",
               "name": "Base Plate",
               "ioValues": [
@@ -11364,8 +11364,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.35648148148148145,
-              "y": 0.27298050139275765,
+              "x": 0.35780423280423285,
+              "y": 0.24512534818941506,
               "uniqueID": "id-1167",
               "name": "Vertical",
               "ioValues": [
@@ -12440,6 +12440,48 @@
                   "unitsKey": "Unitless",
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1786137009913
+                },
+                {
+                  "atomType": "Label",
+                  "x": 0.718915343915344,
+                  "y": 0.796657381615599,
+                  "uniqueID": "id-14058",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "text",
+                      "ioValue": "label",
+                      "currentEquation": "label"
+                    },
+                    {
+                      "name": "startPosition",
+                      "ioValue": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "name": "endPosition",
+                      "ioValue": [
+                        0,
+                        0,
+                        1000
+                      ]
+                    },
+                    {
+                      "name": "color",
+                      "ioValue": "#3F3CDD",
+                      "currentEquation": "#3F3CDD"
+                    },
+                    {
+                      "name": "fontSize",
+                      "ioValue": 40
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
