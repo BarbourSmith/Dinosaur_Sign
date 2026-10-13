@@ -9356,21 +9356,6 @@
                   ]
                 },
                 {
-                  "atomType": "Code",
-                  "x": 0.9,
-                  "y": 0.9,
-                  "uniqueID": "id-16095",
-                  "ioValues": [
-                    {
-                      "name": "shape",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    }
-                  ],
-                  "interpreterVersion": 1,
-                  "code": "function run(shape: Assembly) {\n  const fmt = (p: any) => p.toTuple().map((v: number) => Math.round(v * 100) / 100).join(',');\n  shape.onLeafs((leaf) => {\n    const g: any = leaf.geometry;\n    const edges = g.edges;\n    console.log('edge count ' + edges.length + ' selection ' + JSON.stringify(leaf.selection));\n    edges.forEach((e: any, i: number) => {\n      console.log(i + ' ' + e.geomType + ' len=' + Math.round(e.length * 100) / 100 + ' ' + fmt(e.startPoint) + ' -> ' + fmt(e.endPoint));\n    });\n    for (const idx of [15, 17]) {\n      for (const r of [75, 50, 20, 5]) {\n        try {\n          const target = edges[idx];\n          g.clone().fillet(r, (e: any) => e.inList([target.clone()]));\n          console.log('fillet edge ' + idx + ' r=' + r + ' OK');\n          break;\n        } catch (err: any) {\n          console.log('fillet edge ' + idx + ' r=' + r + ' FAILED: ' + (err?.constructor?.name) + ' ' + String(err?.message ?? err));\n        }\n      }\n    }\n    return leaf;\n  });\n  return shape;\n}\n",
-                  "compiledCode": "\"use strict\";\nfunction run(shape) {\n    const fmt = (p) => p.toTuple().map((v) => Math.round(v * 100) / 100).join(',');\n    shape.onLeafs((leaf) => {\n        const g = leaf.geometry;\n        const edges = g.edges;\n        console.log('edge count ' + edges.length + ' selection ' + JSON.stringify(leaf.selection));\n        edges.forEach((e, i) => {\n            console.log(i + ' ' + e.geomType + ' len=' + Math.round(e.length * 100) / 100 + ' ' + fmt(e.startPoint) + ' -> ' + fmt(e.endPoint));\n        });\n        for (const idx of [15, 17]) {\n            for (const r of [75, 50, 20, 5]) {\n                try {\n                    const target = edges[idx];\n                    g.clone().fillet(r, (e) => e.inList([target.clone()]));\n                    console.log('fillet edge ' + idx + ' r=' + r + ' OK');\n                    break;\n                }\n                catch (err) {\n                    console.log('fillet edge ' + idx + ' r=' + r + ' FAILED: ' + (err?.constructor?.name) + ' ' + String(err?.message ?? err));\n                }\n            }\n        }\n        return leaf;\n    });\n    return shape;\n}\n"
-                },
-                {
                   "atomType": "GitHubMolecule",
                   "x": 0.7,
                   "y": 0.6,
@@ -9661,11 +9646,6 @@
                   "ap2Name": "Shape 2",
                   "ap1ID": "id-1172",
                   "ap2ID": "id-1329"
-                },
-                {
-                  "ap2Name": "shape",
-                  "ap1ID": "id-1173",
-                  "ap2ID": "id-16095"
                 },
                 {
                   "ap2Name": "shape",
