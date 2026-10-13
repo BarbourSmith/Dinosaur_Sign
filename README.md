@@ -2,7 +2,7 @@
 
 # Dinosaur_Sign
 
-![](/project.svg)
+![](/project.png)
 
 ## Inputs
 
